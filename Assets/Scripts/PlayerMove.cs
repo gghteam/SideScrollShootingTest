@@ -1,24 +1,31 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
     #region DontTouchThis
-    [Header("ÀÌµ¿ ¼Óµµ")]
+    [Header("ì´ë™ ì†ë„")]
     [SerializeField]
     private float speed = 2f;
-    [Header("ÃÑ¾Ë ÇÁ¸®ÆÕ")]
+    [Header("ì´ì•Œ í”„ë¦¬íŒ¹")]
     [SerializeField]
     private GameObject bulletPrefab = null;
-    [Header("ÃÑ¾Ë ¹ß»ç°£°İ")]
+    [Header("ì´ì•Œ ë°œì‚¬ê°„ê²©")]
     [SerializeField]
     private float bulletDelay = 0.5f;    
     private Animator animator = null;
 
-    private void SetAnimation()
-    {
-
+    private void SetAnimation(Vector2 targetPosition) {
+        if(transform.position.x > targetPosition.x) {
+            animator.Play("Player_Left");
+        }
+        else if(transform.position.x < targetPosition.x) {
+            animator.Play("Player_Right");
+        }
+        else {
+            animator.Play("Player_Idle");
+        }
     }
     #endregion
 
@@ -27,7 +34,7 @@ public class PlayerMove : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
-        // TODO: GameManager¸¦ °¡Á®¿À¼¼¿ä.
+        // TODO: GameManagerë¥¼ ê°€ì ¸ì˜¤ì„¸ìš”.
     }
 
     private void Update()
@@ -35,15 +42,15 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            
-            // TODO: °æ°è ¿µ¿ªÀ» GameManager¿¡¼­ °¡Á®¿À¼¼¿ä.
+            SetAnimation(targetPosition);
+            // TODO: ê²½ê³„ ì˜ì—­ì„ GameManagerì—ì„œ ê°€ì ¸ì˜¤ì„¸ìš”.
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
         }
     }
 
     private IEnumerator Fire()
     {
-        // ÃÑ¾Ë ¹ß»ç ½ºÅ©¸³Æ®¸¦ ÀÛ¼ºÇØ ÁÖ¼¼¿ä.
+        // TODO: ì´ì•Œ ë°œì‚¬ ìŠ¤í¬ë¦½íŠ¸ë¥¼ ì‘ì„±í•´ ì£¼ì„¸ìš”.
         yield return new WaitForSeconds(bulletDelay);
     }
 }

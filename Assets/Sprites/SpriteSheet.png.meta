@@ -25,31 +25,31 @@ TextureImporter:
     second: Bullet
   - first:
       213: -3086720242725003937
-    second: SpriteSheet_7
+    second: EnemyBullet_0
   - first:
       213: -4556197565260342421
-    second: SpriteSheet_8
+    second: EnemyBullet_1
   - first:
       213: -2764029711273647405
-    second: SpriteSheet_9
+    second: EnemyBullet_2
   - first:
       213: -5540648042656198855
-    second: SpriteSheet_10
+    second: Enemy0_0
   - first:
       213: 3929453942698372637
-    second: SpriteSheet_11
+    second: Enemy0_1
   - first:
       213: 8058879627694289943
-    second: SpriteSheet_12
+    second: Enemy1_0
   - first:
       213: 6833624519701456044
-    second: SpriteSheet_13
+    second: Enemy1_1
   - first:
       213: 4050273695720440628
-    second: SpriteSheet_14
+    second: Enemy1_2
   - first:
       213: -8516189750247450741
-    second: SpriteSheet_15
+    second: Enemy1_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -71,6 +71,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -102,9 +103,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -294,7 +298,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_7
+      name: EnemyBullet_0
       rect:
         serializedVersion: 2
         x: 192
@@ -315,7 +319,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_8
+      name: EnemyBullet_1
       rect:
         serializedVersion: 2
         x: 0
@@ -336,7 +340,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_9
+      name: EnemyBullet_2
       rect:
         serializedVersion: 2
         x: 64
@@ -357,7 +361,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_10
+      name: Enemy0_0
       rect:
         serializedVersion: 2
         x: 128
@@ -378,7 +382,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_11
+      name: Enemy0_1
       rect:
         serializedVersion: 2
         x: 192
@@ -399,7 +403,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_12
+      name: Enemy1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -420,7 +424,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_13
+      name: Enemy1_1
       rect:
         serializedVersion: 2
         x: 64
@@ -441,7 +445,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_14
+      name: Enemy1_2
       rect:
         serializedVersion: 2
         x: 128
@@ -462,7 +466,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_15
+      name: Enemy1_3
       rect:
         serializedVersion: 2
         x: 192

@@ -1,10 +1,10 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class BackgroundMove : MonoBehaviour
 {
-    [Header("½ºÅ©·Ñ ½ºÇÇµå")]
+    [Header("ìŠ¤í¬ë¡¤ ìŠ¤í”¼ë“œ")]
     [SerializeField]
     private float speed = 0.5f;
 

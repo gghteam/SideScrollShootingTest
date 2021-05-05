@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,8 +21,8 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
     }
 
-    // TODO: GameManager¿¡ ÀûÀ» »ı¼ºÇÏ´Â ½ºÅ©¸³Æ®¸¦ ¸¸µå¼¼¿ä.
-    // 1) enemyPrefab¿¡ µé¾î°¥ ÇÁ¸®ÆÕÀ» ¸ÕÀú ¸¸µé¾î¾ß ÇÕ´Ï´Ù.
-    // 2) enemyPrefab º¯¼ö¸¦ Inspector¿¡¼­ Ã¤¿öÁà¾ß ÇÕ´Ï´Ù.
-    // 3) ÀûÀÇ À§Ä¡´Â x À§Ä¡¸¦ 5f·Î °íÁ¤, y À§Ä¡´Â ·£´ıÀ¸·Î »ı¼ºÇÕ´Ï´Ù.
+    // TODO: GameManagerì— ì ì„ ìƒì„±í•˜ëŠ” ìŠ¤í¬ë¦½íŠ¸ë¥¼ ë§Œë“œì„¸ìš”.
+    // 1) enemyPrefabì— ë“¤ì–´ê°ˆ í”„ë¦¬íŒ¹ì„ ë¨¼ì € ë§Œë“¤ì–´ì•¼ í•©ë‹ˆë‹¤.
+    // 2) enemyPrefab ë³€ìˆ˜ë¥¼ Inspectorì—ì„œ ì±„ì›Œì¤˜ì•¼ í•©ë‹ˆë‹¤.
+    // 3) ì ì˜ ìœ„ì¹˜ëŠ” x ìœ„ì¹˜ë¥¼ 5fë¡œ ê³ ì •, y ìœ„ì¹˜ëŠ” ëœë¤ìœ¼ë¡œ ìƒì„±í•©ë‹ˆë‹¤.
 }

@@ -1,16 +1,16 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class BulletMove : MonoBehaviour
 {
-    [Header("ÀÌµ¿ ¼Óµµ")]
+    [Header("ì´ë™ ì†ë„")]
     [SerializeField]
     private float speed = 10f;
 
     private void Start()
     {
-        // TODO : GameManager¸¦ °¡Á®¿À¼¼¿ä.
+        // TODO : GameManagerë¥¼ ê°€ì ¸ì˜¤ì„¸ìš”.
     }
 
     private void Update()
@@ -18,6 +18,6 @@ public class BulletMove : MonoBehaviour
         transform.Translate(Vector2.right * speed * Time.deltaTime);
     }
 
-    // TODO: ÃÑ¾ËÀÌ °æ°è¿µ¿ª¿¡¼­ ¹ş¾î³ª¸é »ç¶óÁö°Ô ÀÛ¼ºÇØ º¸¼¼¿ä.
-    // 1) °æ°è¿µ¿ªÀº GameManager¿¡ ÀÖ´Â °ÍÀ» »ç¿ëÇØ¾ß ÇÕ´Ï´Ù.
+    // TODO: ì´ì•Œì´ ê²½ê³„ì˜ì—­ì—ì„œ ë²—ì–´ë‚˜ë©´ ì‚¬ë¼ì§€ê²Œ ì‘ì„±í•´ ë³´ì„¸ìš”.
+    // 1) ê²½ê³„ì˜ì—­ì€ GameManagerì— ìˆëŠ” ê²ƒì„ ì‚¬ìš©í•´ì•¼ í•©ë‹ˆë‹¤.
 }
